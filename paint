@@ -80,13 +80,6 @@ void setup(void) {
 
   //Kheiry added "clear" button
   tsc.makeButton(1, 306, 1, "CLEAR");
-  // old clear button before function
-  /*
-  tft.setCursor(4, 309);
-  tft.setTextColor(ILI9341_WHITE);  tft.setTextSize(1);
-  tft.println("CLEAR");
-  tft.drawRect(1, 306, 35, 13, ILI9341_WHITE);
-  */
 }
 
 
@@ -191,12 +184,6 @@ void loop()
     
     // Kheiry added "clear" button
     tsc.makeButton(1, 306, 1, "CLEAR");
-    // old clear button before function
-    /*tft.setCursor(4, 309);
-    tft.setTextColor(ILI9341_WHITE);  tft.setTextSize(1);
-    tft.println("CLEAR");
-    tft.drawRect(1, 306, 35, 13, ILI9341_WHITE);
-    */
   }
   else if (((p.y-PENRADIUS) > BOXSIZE) && ((p.y+PENRADIUS) < tft.height())) {
     tft.fillCircle(p.x, p.y, PENRADIUS, currentcolor);
