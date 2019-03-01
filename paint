@@ -14,7 +14,7 @@
  ****************************************************/
 
 
-//I commented out where I added functionality; can be found by searching "Becca"
+//I commented out where I added functionality; can be found by searching "Kheiry"
 
 
 #include <Adafruit_GFX.h>    // Core graphics library
@@ -44,7 +44,7 @@ Adafruit_STMPE610 ts = Adafruit_STMPE610(STMPE_CS);
 #define PENRADIUS 2
 int oldcolor, currentcolor;
 
-// Becca added a library with makeButton function
+// Kheiry added a library with makeButton function
 ArduinoTouchscreen tsc;
 
 void setup(void) {
@@ -70,7 +70,7 @@ void setup(void) {
   tft.fillRect(BOXSIZE*3, 0, BOXSIZE, BOXSIZE, ILI9341_CYAN);
   tft.fillRect(BOXSIZE*4, 0, BOXSIZE, BOXSIZE, ILI9341_BLUE);
   tft.fillRect(BOXSIZE*5, 0, BOXSIZE, BOXSIZE, ILI9341_MAGENTA);
-  //Becca added colors
+  //Kheiry added colors
   tft.fillRect(BOXSIZE*6, 0, BOXSIZE, BOXSIZE, ILI9341_WHITE);
   tft.fillRect(BOXSIZE*7, 0, BOXSIZE, BOXSIZE, ILI9341_ORANGE);
  
@@ -78,7 +78,7 @@ void setup(void) {
   tft.drawRect(0, 0, BOXSIZE, BOXSIZE, ILI9341_WHITE);
   currentcolor = ILI9341_RED;
 
-  //Becca added "clear" button
+  //Kheiry added "clear" button
   tsc.makeButton(1, 306, 1, "CLEAR");
   // old clear button before function
   /*
@@ -143,7 +143,7 @@ void loop()
      } else if (p.x < BOXSIZE*6) {
        currentcolor = ILI9341_MAGENTA;
        
-       // Becca added colors
+       // Kheiry added colors
        tft.drawRect(BOXSIZE*5, 0, BOXSIZE, BOXSIZE, ILI9341_WHITE);
      } else if (p.x < BOXSIZE*7) {
        currentcolor = ILI9341_WHITE;
@@ -167,7 +167,7 @@ void loop()
         if (oldcolor == ILI9341_MAGENTA) 
           tft.fillRect(BOXSIZE*5, 0, BOXSIZE, BOXSIZE, ILI9341_MAGENTA);
 
-          //Becca added colors
+          //Kheiry added colors
         if (oldcolor == ILI9341_WHITE) 
           tft.fillRect(BOXSIZE*6, 0, BOXSIZE, BOXSIZE, ILI9341_WHITE);
         if (oldcolor == ILI9341_ORANGE) 
@@ -185,11 +185,11 @@ void loop()
     tft.fillRect(BOXSIZE*4, 0, BOXSIZE, BOXSIZE, ILI9341_BLUE);
     tft.fillRect(BOXSIZE*5, 0, BOXSIZE, BOXSIZE, ILI9341_MAGENTA);
 
-    //Becca added colors
+    //Kheiry added colors
     tft.fillRect(BOXSIZE*6, 0, BOXSIZE, BOXSIZE, ILI9341_WHITE);
     tft.fillRect(BOXSIZE*7, 0, BOXSIZE, BOXSIZE, ILI9341_ORANGE);
     
-    // Becca added "clear" button
+    // Kheiry added "clear" button
     tsc.makeButton(1, 306, 1, "CLEAR");
     // old clear button before function
     /*tft.setCursor(4, 309);
