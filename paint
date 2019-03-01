@@ -14,7 +14,7 @@
  ****************************************************/
 
 
-//I commented out where I added functionality; can be found by searching "Kheiry"
+//I commented where I added functionality; can be found by searching "Kheiry"
 
 
 #include <Adafruit_GFX.h>    // Core graphics library
